@@ -3,8 +3,7 @@ import express from 'express';
 
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dataRoutes from './routes/dataRoutes.js'; // Ensure the file extension is .js
-
+import dataRoutes from './routes/dataRoutes.js'; 
 dotenv.config();
 
 const app = express();

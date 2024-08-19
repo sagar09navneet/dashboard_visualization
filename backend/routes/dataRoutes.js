@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { find } from '../models/datamodel.js'; // Ensure correct path and file extension
+import { find } from '../models/datamodel.js'; 
 
 const router = Router();
 
-// GET all data
+
 router.get('/', async (req, res) => {
   try {
     const data = await find(); // Fetch all data

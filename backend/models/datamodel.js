@@ -16,10 +16,9 @@ const dataSchema = new Schema({
 // Create the model
 const DataModel = model('Data', dataSchema);
 
-// Define and export the find function
 export const find = async (filters = {}) => {
   return DataModel.find(filters).exec();
 };
 
-// Export the model if needed elsewhere
+
 export default DataModel;
